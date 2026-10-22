@@ -156,6 +156,35 @@ nav_history_csv(date(2026, 9, 1), date(2026, 10, 6), output="nav.csv")
 Every row carries `scheme_type` (Open Ended / Close Ended / Interval Fund),
 `category` (e.g. Money Market) and `amc` alongside the scheme NAV fields.
 
+## Download F&O security ban list
+
+NSE publishes a daily file of securities in the F&O ban period
+(`fo_secban_DDMMYYYY.csv`). Historical dates are supported.
+
+```python
+from datetime import date, timedelta
+from jugaad_data.nse import fo_secban_raw, fo_secban_list, fo_secban_save
+from jugaad_data.holidays import holidays
+
+d = date(2025, 10, 15)
+fo_secban_raw(d)    # 'Securities in Ban For Trade Date 15-OCT-2025:\n1,RBLBANK\n2,SAMMAANCAP\n'
+fo_secban_list(d)   # ['RBLBANK', 'SAMMAANCAP']  ([] when nothing is in ban)
+fo_secban_save(d, "data/secban")  # saves data/secban/fo_secban_15102025.csv
+
+# Ban list history for a date range (skips weekends and NSE holidays)
+from_date, to_date = date(2025, 10, 1), date(2025, 10, 31)
+hols = set(holidays())
+ban_history = {}
+d = from_date
+while d <= to_date:
+    if d.weekday() < 5 and d not in hols:
+        ban_history[d] = fo_secban_list(d)
+    d += timedelta(days=1)
+```
+
+To save files instead, call `fo_secban_save(d, dest)` inside the loop
+(`dest` must exist; files already present are skipped).
+
 ## Download historical derivatives (F&O) data
 
 ```

@@ -1,0 +1,357 @@
+{
+  "generated_at": "2026-09-28T02:34:06+05:30",
+  "source": "NSE security-wise historical API via jugaad-data",
+  "sequential": true,
+  "results": {
+    "DHFL": {
+      "symbol": "DHFL",
+      "from_date": "2019-01-01",
+      "to_date": "2021-06-11",
+      "event": "suspended 2021-06-14",
+      "allowed_series": [
+        "EQ"
+      ],
+      "allowed_symbols": [
+        "DHFL"
+      ],
+      "status": "already_downloaded",
+      "rows": 606,
+      "first_date": "2019-01-01",
+      "last_date": "2021-06-11",
+      "max_gap_days": 4,
+      "path": "/Users/suhaib/workspace/jugaad-data/data/required_daily_ohlcv/DHFL.csv"
+    },
+    "EQUITAS": {
+      "symbol": "EQUITAS",
+      "from_date": "2019-01-01",
+      "to_date": "2023-02-02",
+      "event": "merged; trading ceased 2023-02-03",
+      "allowed_series": [
+        "EQ"
+      ],
+      "allowed_symbols": [
+        "EQUITAS"
+      ],
+      "status": "already_downloaded",
+      "rows": 1016,
+      "first_date": "2019-01-01",
+      "last_date": "2023-02-02",
+      "max_gap_days": 5,
+      "path": "/Users/suhaib/workspace/jugaad-data/data/required_daily_ohlcv/EQUITAS.csv"
+    },
+    "INOXLEISUR": {
+      "symbol": "INOXLEISUR",
+      "from_date": "2019-01-01",
+      "to_date": "2023-02-16",
+      "event": "merged; suspended 2023-02-17",
+      "allowed_series": [
+        "EQ"
+      ],
+      "allowed_symbols": [
+        "INOXLEISUR"
+      ],
+      "status": "already_downloaded",
+      "rows": 1026,
+      "first_date": "2019-01-01",
+      "last_date": "2023-02-16",
+      "max_gap_days": 5,
+      "path": "/Users/suhaib/workspace/jugaad-data/data/required_daily_ohlcv/INOXLEISUR.csv"
+    },
+    "MINDTREE": {
+      "symbol": "MINDTREE",
+      "from_date": "2019-01-01",
+      "to_date": "2022-11-22",
+      "event": "merged; suspended 2022-11-23",
+      "allowed_series": [
+        "EQ"
+      ],
+      "allowed_symbols": [
+        "MINDTREE"
+      ],
+      "status": "already_downloaded",
+      "rows": 965,
+      "first_date": "2019-01-01",
+      "last_date": "2022-11-22",
+      "max_gap_days": 5,
+      "path": "/Users/suhaib/workspace/jugaad-data/data/required_daily_ohlcv/MINDTREE.csv"
+    },
+    "HDFC": {
+      "symbol": "HDFC",
+      "from_date": "2019-01-01",
+      "to_date": "2023-07-12",
+      "event": "merged; trading ceased 2023-07-13",
+      "allowed_series": [
+        "EQ"
+      ],
+      "allowed_symbols": [
+        "HDFC"
+      ],
+      "status": "already_downloaded",
+      "rows": 1123,
+      "first_date": "2019-01-01",
+      "last_date": "2023-07-12",
+      "max_gap_days": 5,
+      "path": "/Users/suhaib/workspace/jugaad-data/data/required_daily_ohlcv/HDFC.csv"
+    },
+    "UJJIVAN": {
+      "symbol": "UJJIVAN",
+      "from_date": "2019-01-01",
+      "to_date": "2024-05-02",
+      "event": "merged; trading ceased 2024-05-03",
+      "allowed_series": [
+        "EQ"
+      ],
+      "allowed_symbols": [
+        "UJJIVAN"
+      ],
+      "status": "already_downloaded",
+      "rows": 1322,
+      "first_date": "2019-01-01",
+      "last_date": "2024-05-02",
+      "max_gap_days": 5,
+      "path": "/Users/suhaib/workspace/jugaad-data/data/required_daily_ohlcv/UJJIVAN.csv"
+    },
+    "FRETAIL": {
+      "symbol": "FRETAIL",
+      "from_date": "2019-01-01",
+      "to_date": "2024-08-01",
+      "event": "suspended 2024-08-02",
+      "allowed_series": [
+        "EQ",
+        "BZ"
+      ],
+      "allowed_symbols": [
+        "FRETAIL"
+      ],
+      "status": "already_downloaded",
+      "rows": 1126,
+      "first_date": "2019-01-01",
+      "last_date": "2024-08-01",
+      "max_gap_days": 101,
+      "path": "/Users/suhaib/workspace/jugaad-data/data/required_daily_ohlcv/FRETAIL.csv"
+    },
+    "TATAMTRDVR": {
+      "symbol": "TATAMTRDVR",
+      "from_date": "2019-01-01",
+      "to_date": "2024-08-29",
+      "event": "suspended 2024-08-30",
+      "allowed_series": [
+        "EQ"
+      ],
+      "allowed_symbols": [
+        "TATAMTRDVR"
+      ],
+      "status": "already_downloaded",
+      "rows": 1404,
+      "first_date": "2019-01-01",
+      "last_date": "2024-08-29",
+      "max_gap_days": 5,
+      "path": "/Users/suhaib/workspace/jugaad-data/data/required_daily_ohlcv/TATAMTRDVR.csv"
+    },
+    "IDFC": {
+      "symbol": "IDFC",
+      "from_date": "2019-01-01",
+      "to_date": "2024-10-09",
+      "event": "merged; suspended 2024-10-10",
+      "allowed_series": [
+        "EQ"
+      ],
+      "allowed_symbols": [
+        "IDFC"
+      ],
+      "status": "already_downloaded",
+      "rows": 1432,
+      "first_date": "2019-01-01",
+      "last_date": "2024-10-09",
+      "max_gap_days": 5,
+      "path": "/Users/suhaib/workspace/jugaad-data/data/required_daily_ohlcv/IDFC.csv"
+    },
+    "ISEC": {
+      "symbol": "ISEC",
+      "from_date": "2019-01-01",
+      "to_date": "2025-03-21",
+      "event": "delisted 2025-03-24",
+      "allowed_series": [
+        "EQ"
+      ],
+      "allowed_symbols": [
+        "ISEC"
+      ],
+      "status": "already_downloaded",
+      "rows": 1545,
+      "first_date": "2019-01-01",
+      "last_date": "2025-03-21",
+      "max_gap_days": 5,
+      "path": "/Users/suhaib/workspace/jugaad-data/data/required_daily_ohlcv/ISEC.csv"
+    },
+    "PEL": {
+      "symbol": "PEL",
+      "from_date": "2019-01-01",
+      "to_date": "2025-09-22",
+      "event": "merged; suspended 2025-09-23",
+      "allowed_series": [
+        "EQ"
+      ],
+      "allowed_symbols": [
+        "PEL"
+      ],
+      "status": "already_downloaded",
+      "rows": 1669,
+      "first_date": "2019-01-01",
+      "last_date": "2025-09-22",
+      "max_gap_days": 5,
+      "path": "/Users/suhaib/workspace/jugaad-data/data/required_daily_ohlcv/PEL.csv"
+    },
+    "GSPL": {
+      "symbol": "GSPL",
+      "from_date": "2019-01-01",
+      "to_date": "2026-05-11",
+      "event": "merged; suspended 2026-05-12",
+      "allowed_series": [
+        "EQ"
+      ],
+      "allowed_symbols": [
+        "GSPL"
+      ],
+      "status": "already_downloaded",
+      "rows": 1823,
+      "first_date": "2019-01-01",
+      "last_date": "2026-05-11",
+      "max_gap_days": 5,
+      "path": "/Users/suhaib/workspace/jugaad-data/data/required_daily_ohlcv/GSPL.csv"
+    },
+    "FCONSUMER": {
+      "symbol": "FCONSUMER",
+      "from_date": "2019-01-01",
+      "to_date": "2026-08-31",
+      "event": "last known trading opportunity",
+      "allowed_series": [
+        "EQ",
+        "BZ"
+      ],
+      "allowed_symbols": [
+        "FCONSUMER"
+      ],
+      "status": "already_downloaded",
+      "rows": 1065,
+      "first_date": "2019-01-01",
+      "last_date": "2026-08-31",
+      "max_gap_days": 593,
+      "path": "/Users/suhaib/workspace/jugaad-data/data/required_daily_ohlcv/FCONSUMER.csv"
+    },
+    "FLFL": {
+      "symbol": "FLFL",
+      "from_date": "2019-01-01",
+      "to_date": "2026-09-28",
+      "event": "active/suspended history; no final event date",
+      "allowed_series": [
+        "EQ",
+        "BZ"
+      ],
+      "allowed_symbols": [
+        "FLFL"
+      ],
+      "status": "already_downloaded",
+      "rows": 1701,
+      "first_date": "2019-01-01",
+      "last_date": "2026-09-25",
+      "max_gap_days": 155,
+      "path": "/Users/suhaib/workspace/jugaad-data/data/required_daily_ohlcv/FLFL.csv"
+    },
+    "HEG": {
+      "symbol": "HEG",
+      "from_date": "2019-01-01",
+      "to_date": "2026-09-28",
+      "event": "renamed to HEGAM",
+      "allowed_series": [
+        "EQ"
+      ],
+      "allowed_symbols": [
+        "HEG",
+        "HEGAM"
+      ],
+      "status": "already_downloaded",
+      "rows": 1909,
+      "first_date": "2019-01-01",
+      "last_date": "2026-09-25",
+      "max_gap_days": 18,
+      "path": "/Users/suhaib/workspace/jugaad-data/data/required_daily_ohlcv/HEG.csv"
+    },
+    "JBCHEPHARM": {
+      "symbol": "JBCHEPHARM",
+      "from_date": "2019-01-01",
+      "to_date": "2026-07-16",
+      "event": "merged; suspended 2026-07-17",
+      "allowed_series": [
+        "EQ"
+      ],
+      "allowed_symbols": [
+        "JBCHEPHARM"
+      ],
+      "status": "already_downloaded",
+      "rows": 1869,
+      "first_date": "2019-01-01",
+      "last_date": "2026-07-16",
+      "max_gap_days": 5,
+      "path": "/Users/suhaib/workspace/jugaad-data/data/required_daily_ohlcv/JBCHEPHARM.csv"
+    },
+    "MTARTECH": {
+      "symbol": "MTARTECH",
+      "from_date": "2021-03-15",
+      "to_date": "2026-09-28",
+      "event": "active; download from listing",
+      "allowed_series": [
+        "EQ",
+        "BE"
+      ],
+      "allowed_symbols": [
+        "MTARTECH"
+      ],
+      "status": "already_downloaded",
+      "rows": 1373,
+      "first_date": "2021-03-15",
+      "last_date": "2026-09-25",
+      "max_gap_days": 5,
+      "path": "/Users/suhaib/workspace/jugaad-data/data/required_daily_ohlcv/MTARTECH.csv"
+    },
+    "RAJESHEXPO": {
+      "symbol": "RAJESHEXPO",
+      "from_date": "2019-01-01",
+      "to_date": "2026-09-28",
+      "event": "active surveillance",
+      "allowed_series": [
+        "EQ",
+        "BZ"
+      ],
+      "allowed_symbols": [
+        "RAJESHEXPO"
+      ],
+      "status": "already_downloaded",
+      "rows": 1919,
+      "first_date": "2019-01-01",
+      "last_date": "2026-09-25",
+      "max_gap_days": 5,
+      "path": "/Users/suhaib/workspace/jugaad-data/data/required_daily_ohlcv/RAJESHEXPO.csv"
+    },
+    "STLTECH": {
+      "symbol": "STLTECH",
+      "from_date": "2019-01-01",
+      "to_date": "2026-09-28",
+      "event": "active surveillance; historical STRTECH alias",
+      "allowed_series": [
+        "EQ",
+        "BE"
+      ],
+      "allowed_symbols": [
+        "STLTECH",
+        "STRTECH"
+      ],
+      "status": "already_downloaded",
+      "rows": 1919,
+      "first_date": "2019-01-01",
+      "last_date": "2026-09-25",
+      "max_gap_days": 5,
+      "path": "/Users/suhaib/workspace/jugaad-data/data/required_daily_ohlcv/STLTECH.csv"
+    }
+  }
+}
