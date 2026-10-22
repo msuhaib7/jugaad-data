@@ -58,16 +58,19 @@ class NSEHistory:
         self.s = Session()
         self.s.headers.update(self.headers)
         self.ssl_verify = True
+        self.timeout = 30
 
     def _get(self, path_name, params):
         # Fetch cookies from the report page to maintain session
         if not self.s.cookies:
             path = self.path_map["equity_quote_page"]
             url = urljoin(self.base_url, path)
-            self.s.get(url, verify=self.ssl_verify)
+            self.s.get(url, verify=self.ssl_verify, timeout=self.timeout)
         path = self.path_map[path_name]
         url = urljoin(self.base_url, path)
-        self.r = self.s.get(url, params=params, verify=self.ssl_verify)
+        self.r = self.s.get(
+            url, params=params, verify=self.ssl_verify, timeout=self.timeout
+        )
         return self.r
     
     @ut.cached(APP_NAME + '-stock')
@@ -318,7 +321,9 @@ class NSEIndexHistory(NSEHistory):
     def _post_json(self, path_name, params):
         path = self.path_map[path_name]
         url = urljoin(self.base_url, path)
-        self.r = self.s.post(url, json=params, verify=self.ssl_verify)
+        self.r = self.s.post(
+            url, json=params, verify=self.ssl_verify, timeout=self.timeout
+        )
         return self.r
     
     @ut.cached(APP_NAME + '-index')
@@ -379,7 +384,7 @@ class NSEIndexHistory(NSEHistory):
         """Returns top-level index types: Equity, Fixed Income, Multi Asset"""
         path = self.path_map["index_type_list"]
         url = urljoin(self.base_url, path)
-        r = self.s.post(url, verify=self.ssl_verify)
+        r = self.s.post(url, verify=self.ssl_verify, timeout=self.timeout)
         return [x['indextype'] for x in r.json() if x.get('indextype')]
 
     def index_subtype_list(self, index_type, index_group):
@@ -391,7 +396,9 @@ class NSEIndexHistory(NSEHistory):
         params = {'cinfo': {'indextype': index_type, 'indexgroup': index_group}}
         path = self.path_map["index_subtype_list"]
         url = urljoin(self.base_url, path)
-        r = self.s.post(url, json=params, verify=self.ssl_verify)
+        r = self.s.post(
+            url, json=params, verify=self.ssl_verify, timeout=self.timeout
+        )
         return [x['indextype'] for x in r.json() if x.get('indextype')]
 
     def index_name_list(self, index_type, index_group):
@@ -404,7 +411,13 @@ class NSEIndexHistory(NSEHistory):
         data = {'cinfo[indextype]': index_type, 'cinfo[indexgroup]': index_group}
         path = self.path_map["index_name_list"]
         url = urljoin(self.base_url, path)
-        r = self.s.post(url, data=data, headers={'Content-Type': 'application/x-www-form-urlencoded'}, verify=self.ssl_verify)
+        r = self.s.post(
+            url,
+            data=data,
+            headers={'Content-Type': 'application/x-www-form-urlencoded'},
+            verify=self.ssl_verify,
+            timeout=self.timeout,
+        )
         return [x['indextype'] for x in r.json() if x.get('indextype')]
 
 
@@ -462,4 +475,3 @@ def index_pe_df(symbol, from_date, to_date):
     for col, dtype in index_dtypes.items():
         df[col] = df[col].apply(dtype)
     return df
-

@@ -204,7 +204,8 @@ class NSEArchives:
                 "bhavcopy_udiff": "/content/cm/BhavCopy_NSE_CM_0_0_0_{ymd}_F_0000.csv.zip",
                 "bulk_deals": "/content/equities/bulk.csv",
                 "bhavcopy_fo": "/content/historical/DERIVATIVES/{yyyy}/{MMM}/fo{dd}{MMM}{yyyy}bhav.csv.zip",
-                "bhavcopy_fo_udiff": "/content/fo/BhavCopy_NSE_FO_0_0_0_{ymd}_F_0000.csv.zip"
+                "bhavcopy_fo_udiff": "/content/fo/BhavCopy_NSE_FO_0_0_0_{ymd}_F_0000.csv.zip",
+                "fo_secban": "/archives/fo/sec_ban/fo_secban_{dd}{mm}{yyyy}.csv"
             }
         self.daily_reports = NSEDailyReports()
         
@@ -378,6 +379,34 @@ class NSEArchives:
         if os.path.isfile(fname):
             return fname
         text = self.full_bhavcopy_raw(dt)
+        with open(fname, 'w') as fp:
+            fp.write(text)
+        return fname
+
+    def fo_secban_raw(self, dt):
+        """Downloads the F&O security ban list (fo_secban_DDMMYYYY.csv) for a
+        specific date. Lists securities in the ban period for that date."""
+        r = self.get("fo_secban", dd=dt.strftime('%d'), mm=dt.strftime('%m'),
+                     yyyy=dt.year)
+        r.raise_for_status()
+        return r.text
+
+    def fo_secban_list(self, dt):
+        """Returns the symbols in the F&O ban period for a specific date"""
+        txt = self.fo_secban_raw(dt)
+        # Format: header line, then "<serial>,<SYMBOL>" rows
+        symbols = []
+        for line in txt.splitlines()[1:]:
+            parts = [x.strip() for x in line.split(",")]
+            if len(parts) >= 2 and parts[1]:
+                symbols.append(parts[1])
+        return symbols
+
+    def fo_secban_save(self, dt, dest, skip_if_present=True):
+        fname = os.path.join(dest, dt.strftime("fo_secban_%d%m%Y.csv"))
+        if os.path.isfile(fname) and skip_if_present:
+            return fname
+        text = self.fo_secban_raw(dt)
         with open(fname, 'w') as fp:
             fp.write(text)
         return fname
@@ -620,6 +649,9 @@ bhavcopy_fo_raw = a.bhavcopy_fo_raw
 bhavcopy_fo_save = a.bhavcopy_fo_save
 bhavcopy_udiff_raw = a.bhavcopy_udiff_raw
 bhavcopy_old_raw = a.bhavcopy_old_raw
+fo_secban_raw = a.fo_secban_raw
+fo_secban_list = a.fo_secban_list
+fo_secban_save = a.fo_secban_save
 ia = NSEIndicesArchives()
 bhavcopy_index_raw = ia.bhavcopy_index_raw
 bhavcopy_index_save = ia.bhavcopy_index_save

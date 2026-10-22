@@ -1,0 +1,460 @@
+{
+  "generated_at": "2026-09-28T02:48:32+05:30",
+  "source": "NSE Indices historical endpoints via jugaad-data",
+  "sequential": true,
+  "results": {
+    "NIFTY 50": {
+      "price": {
+        "status": "already_downloaded",
+        "rows": 1674,
+        "first_date": "2020-01-01",
+        "last_date": "2026-09-25",
+        "path": "/Users/suhaib/workspace/jugaad-data/data/required_market_indices/price/NIFTY_50.csv"
+      },
+      "tri": {
+        "status": "already_downloaded",
+        "rows": 1674,
+        "first_date": "2020-01-01",
+        "last_date": "2026-09-25",
+        "path": "/Users/suhaib/workspace/jugaad-data/data/required_market_indices/tri/NIFTY_50.csv"
+      },
+      "status": "success"
+    },
+    "NIFTY 100": {
+      "price": {
+        "status": "already_downloaded",
+        "rows": 1674,
+        "first_date": "2020-01-01",
+        "last_date": "2026-09-25",
+        "path": "/Users/suhaib/workspace/jugaad-data/data/required_market_indices/price/NIFTY_100.csv"
+      },
+      "tri": {
+        "status": "already_downloaded",
+        "rows": 1674,
+        "first_date": "2020-01-01",
+        "last_date": "2026-09-25",
+        "path": "/Users/suhaib/workspace/jugaad-data/data/required_market_indices/tri/NIFTY_100.csv"
+      },
+      "status": "success"
+    },
+    "NIFTY 200": {
+      "price": {
+        "status": "already_downloaded",
+        "rows": 1674,
+        "first_date": "2020-01-01",
+        "last_date": "2026-09-25",
+        "path": "/Users/suhaib/workspace/jugaad-data/data/required_market_indices/price/NIFTY_200.csv"
+      },
+      "tri": {
+        "status": "already_downloaded",
+        "rows": 1674,
+        "first_date": "2020-01-01",
+        "last_date": "2026-09-25",
+        "path": "/Users/suhaib/workspace/jugaad-data/data/required_market_indices/tri/NIFTY_200.csv"
+      },
+      "status": "success"
+    },
+    "NIFTY 500": {
+      "price": {
+        "status": "already_downloaded",
+        "rows": 1674,
+        "first_date": "2020-01-01",
+        "last_date": "2026-09-25",
+        "path": "/Users/suhaib/workspace/jugaad-data/data/required_market_indices/price/NIFTY_500.csv"
+      },
+      "tri": {
+        "status": "already_downloaded",
+        "rows": 1674,
+        "first_date": "2020-01-01",
+        "last_date": "2026-09-25",
+        "path": "/Users/suhaib/workspace/jugaad-data/data/required_market_indices/tri/NIFTY_500.csv"
+      },
+      "status": "success"
+    },
+    "NIFTY LARGEMIDCAP 250": {
+      "price": {
+        "status": "already_downloaded",
+        "rows": 1674,
+        "first_date": "2020-01-01",
+        "last_date": "2026-09-25",
+        "path": "/Users/suhaib/workspace/jugaad-data/data/required_market_indices/price/NIFTY_LARGEMIDCAP_250.csv"
+      },
+      "tri": {
+        "status": "already_downloaded",
+        "rows": 1674,
+        "first_date": "2020-01-01",
+        "last_date": "2026-09-25",
+        "path": "/Users/suhaib/workspace/jugaad-data/data/required_market_indices/tri/NIFTY_LARGEMIDCAP_250.csv"
+      },
+      "status": "success"
+    },
+    "NIFTY MIDCAP 150": {
+      "price": {
+        "status": "already_downloaded",
+        "rows": 1674,
+        "first_date": "2020-01-01",
+        "last_date": "2026-09-25",
+        "path": "/Users/suhaib/workspace/jugaad-data/data/required_market_indices/price/NIFTY_MIDCAP_150.csv"
+      },
+      "tri": {
+        "status": "already_downloaded",
+        "rows": 1674,
+        "first_date": "2020-01-01",
+        "last_date": "2026-09-25",
+        "path": "/Users/suhaib/workspace/jugaad-data/data/required_market_indices/tri/NIFTY_MIDCAP_150.csv"
+      },
+      "status": "success"
+    },
+    "NIFTY SMALLCAP 100": {
+      "price": {
+        "status": "already_downloaded",
+        "rows": 1674,
+        "first_date": "2020-01-01",
+        "last_date": "2026-09-25",
+        "path": "/Users/suhaib/workspace/jugaad-data/data/required_market_indices/price/NIFTY_SMALLCAP_100.csv"
+      },
+      "tri": {
+        "status": "already_downloaded",
+        "rows": 1674,
+        "first_date": "2020-01-01",
+        "last_date": "2026-09-25",
+        "path": "/Users/suhaib/workspace/jugaad-data/data/required_market_indices/tri/NIFTY_SMALLCAP_100.csv"
+      },
+      "status": "success"
+    },
+    "NIFTY SMALLCAP 250": {
+      "price": {
+        "status": "already_downloaded",
+        "rows": 1674,
+        "first_date": "2020-01-01",
+        "last_date": "2026-09-25",
+        "path": "/Users/suhaib/workspace/jugaad-data/data/required_market_indices/price/NIFTY_SMALLCAP_250.csv"
+      },
+      "tri": {
+        "status": "already_downloaded",
+        "rows": 1674,
+        "first_date": "2020-01-01",
+        "last_date": "2026-09-25",
+        "path": "/Users/suhaib/workspace/jugaad-data/data/required_market_indices/tri/NIFTY_SMALLCAP_250.csv"
+      },
+      "status": "success"
+    },
+    "INDIA VIX": {
+      "price": {
+        "status": "already_downloaded",
+        "rows": 1666,
+        "first_date": "2020-01-01",
+        "last_date": "2026-09-25",
+        "path": "/Users/suhaib/workspace/jugaad-data/data/required_market_indices/price/INDIA_VIX.csv"
+      },
+      "tri": null,
+      "status": "success"
+    },
+    "NIFTY AUTO": {
+      "price": {
+        "status": "already_downloaded",
+        "rows": 1674,
+        "first_date": "2020-01-01",
+        "last_date": "2026-09-25",
+        "path": "/Users/suhaib/workspace/jugaad-data/data/required_market_indices/price/NIFTY_AUTO.csv"
+      },
+      "tri": {
+        "status": "already_downloaded",
+        "rows": 1674,
+        "first_date": "2020-01-01",
+        "last_date": "2026-09-25",
+        "path": "/Users/suhaib/workspace/jugaad-data/data/required_market_indices/tri/NIFTY_AUTO.csv"
+      },
+      "status": "success"
+    },
+    "NIFTY BANK": {
+      "price": {
+        "status": "already_downloaded",
+        "rows": 1674,
+        "first_date": "2020-01-01",
+        "last_date": "2026-09-25",
+        "path": "/Users/suhaib/workspace/jugaad-data/data/required_market_indices/price/NIFTY_BANK.csv"
+      },
+      "tri": {
+        "status": "already_downloaded",
+        "rows": 1674,
+        "first_date": "2020-01-01",
+        "last_date": "2026-09-25",
+        "path": "/Users/suhaib/workspace/jugaad-data/data/required_market_indices/tri/NIFTY_BANK.csv"
+      },
+      "status": "success"
+    },
+    "NIFTY CONSUMER DURABLES": {
+      "price": {
+        "status": "already_downloaded",
+        "rows": 1674,
+        "first_date": "2020-01-01",
+        "last_date": "2026-09-25",
+        "path": "/Users/suhaib/workspace/jugaad-data/data/required_market_indices/price/NIFTY_CONSUMER_DURABLES.csv"
+      },
+      "tri": {
+        "status": "already_downloaded",
+        "rows": 1674,
+        "first_date": "2020-01-01",
+        "last_date": "2026-09-25",
+        "path": "/Users/suhaib/workspace/jugaad-data/data/required_market_indices/tri/NIFTY_CONSUMER_DURABLES.csv"
+      },
+      "status": "success"
+    },
+    "NIFTY ENERGY": {
+      "price": {
+        "status": "already_downloaded",
+        "rows": 1674,
+        "first_date": "2020-01-01",
+        "last_date": "2026-09-25",
+        "path": "/Users/suhaib/workspace/jugaad-data/data/required_market_indices/price/NIFTY_ENERGY.csv"
+      },
+      "tri": {
+        "status": "already_downloaded",
+        "rows": 1674,
+        "first_date": "2020-01-01",
+        "last_date": "2026-09-25",
+        "path": "/Users/suhaib/workspace/jugaad-data/data/required_market_indices/tri/NIFTY_ENERGY.csv"
+      },
+      "status": "success"
+    },
+    "NIFTY FINANCIAL SERVICES": {
+      "price": {
+        "status": "already_downloaded",
+        "rows": 1674,
+        "first_date": "2020-01-01",
+        "last_date": "2026-09-25",
+        "path": "/Users/suhaib/workspace/jugaad-data/data/required_market_indices/price/NIFTY_FINANCIAL_SERVICES.csv"
+      },
+      "tri": {
+        "status": "already_downloaded",
+        "rows": 1674,
+        "first_date": "2020-01-01",
+        "last_date": "2026-09-25",
+        "path": "/Users/suhaib/workspace/jugaad-data/data/required_market_indices/tri/NIFTY_FINANCIAL_SERVICES.csv"
+      },
+      "status": "success"
+    },
+    "NIFTY FMCG": {
+      "price": {
+        "status": "already_downloaded",
+        "rows": 1674,
+        "first_date": "2020-01-01",
+        "last_date": "2026-09-25",
+        "path": "/Users/suhaib/workspace/jugaad-data/data/required_market_indices/price/NIFTY_FMCG.csv"
+      },
+      "tri": {
+        "status": "already_downloaded",
+        "rows": 1674,
+        "first_date": "2020-01-01",
+        "last_date": "2026-09-25",
+        "path": "/Users/suhaib/workspace/jugaad-data/data/required_market_indices/tri/NIFTY_FMCG.csv"
+      },
+      "status": "success"
+    },
+    "NIFTY HEALTHCARE": {
+      "price": {
+        "status": "already_downloaded",
+        "rows": 1674,
+        "first_date": "2020-01-01",
+        "last_date": "2026-09-25",
+        "path": "/Users/suhaib/workspace/jugaad-data/data/required_market_indices/price/NIFTY_HEALTHCARE.csv"
+      },
+      "tri": {
+        "status": "already_downloaded",
+        "rows": 1674,
+        "first_date": "2020-01-01",
+        "last_date": "2026-09-25",
+        "path": "/Users/suhaib/workspace/jugaad-data/data/required_market_indices/tri/NIFTY_HEALTHCARE.csv"
+      },
+      "status": "success"
+    },
+    "NIFTY INFRASTRUCTURE": {
+      "price": {
+        "status": "already_downloaded",
+        "rows": 1674,
+        "first_date": "2020-01-01",
+        "last_date": "2026-09-25",
+        "path": "/Users/suhaib/workspace/jugaad-data/data/required_market_indices/price/NIFTY_INFRASTRUCTURE.csv"
+      },
+      "tri": {
+        "status": "already_downloaded",
+        "rows": 1674,
+        "first_date": "2020-01-01",
+        "last_date": "2026-09-25",
+        "path": "/Users/suhaib/workspace/jugaad-data/data/required_market_indices/tri/NIFTY_INFRASTRUCTURE.csv"
+      },
+      "status": "success"
+    },
+    "NIFTY IT": {
+      "price": {
+        "status": "already_downloaded",
+        "rows": 1674,
+        "first_date": "2020-01-01",
+        "last_date": "2026-09-25",
+        "path": "/Users/suhaib/workspace/jugaad-data/data/required_market_indices/price/NIFTY_IT.csv"
+      },
+      "tri": {
+        "status": "already_downloaded",
+        "rows": 1674,
+        "first_date": "2020-01-01",
+        "last_date": "2026-09-25",
+        "path": "/Users/suhaib/workspace/jugaad-data/data/required_market_indices/tri/NIFTY_IT.csv"
+      },
+      "status": "success"
+    },
+    "NIFTY MEDIA": {
+      "price": {
+        "status": "already_downloaded",
+        "rows": 1674,
+        "first_date": "2020-01-01",
+        "last_date": "2026-09-25",
+        "path": "/Users/suhaib/workspace/jugaad-data/data/required_market_indices/price/NIFTY_MEDIA.csv"
+      },
+      "tri": {
+        "status": "already_downloaded",
+        "rows": 1674,
+        "first_date": "2020-01-01",
+        "last_date": "2026-09-25",
+        "path": "/Users/suhaib/workspace/jugaad-data/data/required_market_indices/tri/NIFTY_MEDIA.csv"
+      },
+      "status": "success"
+    },
+    "NIFTY METAL": {
+      "price": {
+        "status": "already_downloaded",
+        "rows": 1674,
+        "first_date": "2020-01-01",
+        "last_date": "2026-09-25",
+        "path": "/Users/suhaib/workspace/jugaad-data/data/required_market_indices/price/NIFTY_METAL.csv"
+      },
+      "tri": {
+        "status": "already_downloaded",
+        "rows": 1674,
+        "first_date": "2020-01-01",
+        "last_date": "2026-09-25",
+        "path": "/Users/suhaib/workspace/jugaad-data/data/required_market_indices/tri/NIFTY_METAL.csv"
+      },
+      "status": "success"
+    },
+    "NIFTY OIL & GAS": {
+      "price": {
+        "status": "already_downloaded",
+        "rows": 1674,
+        "first_date": "2020-01-01",
+        "last_date": "2026-09-25",
+        "path": "/Users/suhaib/workspace/jugaad-data/data/required_market_indices/price/NIFTY_OIL_AND_GAS.csv"
+      },
+      "tri": {
+        "status": "already_downloaded",
+        "rows": 1674,
+        "first_date": "2020-01-01",
+        "last_date": "2026-09-25",
+        "path": "/Users/suhaib/workspace/jugaad-data/data/required_market_indices/tri/NIFTY_OIL_AND_GAS.csv"
+      },
+      "status": "success"
+    },
+    "NIFTY PHARMA": {
+      "price": {
+        "status": "already_downloaded",
+        "rows": 1674,
+        "first_date": "2020-01-01",
+        "last_date": "2026-09-25",
+        "path": "/Users/suhaib/workspace/jugaad-data/data/required_market_indices/price/NIFTY_PHARMA.csv"
+      },
+      "tri": {
+        "status": "already_downloaded",
+        "rows": 1674,
+        "first_date": "2020-01-01",
+        "last_date": "2026-09-25",
+        "path": "/Users/suhaib/workspace/jugaad-data/data/required_market_indices/tri/NIFTY_PHARMA.csv"
+      },
+      "status": "success"
+    },
+    "NIFTY PRIVATE BANK": {
+      "price": {
+        "status": "already_downloaded",
+        "rows": 1674,
+        "first_date": "2020-01-01",
+        "last_date": "2026-09-25",
+        "path": "/Users/suhaib/workspace/jugaad-data/data/required_market_indices/price/NIFTY_PRIVATE_BANK.csv"
+      },
+      "tri": {
+        "status": "already_downloaded",
+        "rows": 1674,
+        "first_date": "2020-01-01",
+        "last_date": "2026-09-25",
+        "path": "/Users/suhaib/workspace/jugaad-data/data/required_market_indices/tri/NIFTY_PRIVATE_BANK.csv"
+      },
+      "status": "success"
+    },
+    "NIFTY PSU BANK": {
+      "price": {
+        "status": "already_downloaded",
+        "rows": 1674,
+        "first_date": "2020-01-01",
+        "last_date": "2026-09-25",
+        "path": "/Users/suhaib/workspace/jugaad-data/data/required_market_indices/price/NIFTY_PSU_BANK.csv"
+      },
+      "tri": {
+        "status": "already_downloaded",
+        "rows": 1674,
+        "first_date": "2020-01-01",
+        "last_date": "2026-09-25",
+        "path": "/Users/suhaib/workspace/jugaad-data/data/required_market_indices/tri/NIFTY_PSU_BANK.csv"
+      },
+      "status": "success"
+    },
+    "NIFTY PSE": {
+      "price": {
+        "status": "already_downloaded",
+        "rows": 1674,
+        "first_date": "2020-01-01",
+        "last_date": "2026-09-25",
+        "path": "/Users/suhaib/workspace/jugaad-data/data/required_market_indices/price/NIFTY_PSE.csv"
+      },
+      "tri": {
+        "status": "already_downloaded",
+        "rows": 1674,
+        "first_date": "2020-01-01",
+        "last_date": "2026-09-25",
+        "path": "/Users/suhaib/workspace/jugaad-data/data/required_market_indices/tri/NIFTY_PSE.csv"
+      },
+      "status": "success"
+    },
+    "NIFTY REALTY": {
+      "price": {
+        "status": "already_downloaded",
+        "rows": 1674,
+        "first_date": "2020-01-01",
+        "last_date": "2026-09-25",
+        "path": "/Users/suhaib/workspace/jugaad-data/data/required_market_indices/price/NIFTY_REALTY.csv"
+      },
+      "tri": {
+        "status": "already_downloaded",
+        "rows": 1674,
+        "first_date": "2020-01-01",
+        "last_date": "2026-09-25",
+        "path": "/Users/suhaib/workspace/jugaad-data/data/required_market_indices/tri/NIFTY_REALTY.csv"
+      },
+      "status": "success"
+    },
+    "NIFTY SERVICES SECTOR": {
+      "price": {
+        "status": "already_downloaded",
+        "rows": 1674,
+        "first_date": "2020-01-01",
+        "last_date": "2026-09-25",
+        "path": "/Users/suhaib/workspace/jugaad-data/data/required_market_indices/price/NIFTY_SERVICES_SECTOR.csv"
+      },
+      "tri": {
+        "status": "already_downloaded",
+        "rows": 1674,
+        "first_date": "2020-01-01",
+        "last_date": "2026-09-25",
+        "path": "/Users/suhaib/workspace/jugaad-data/data/required_market_indices/tri/NIFTY_SERVICES_SECTOR.csv"
+      },
+      "status": "success"
+    }
+  }
+}

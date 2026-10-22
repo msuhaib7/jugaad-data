@@ -346,3 +346,48 @@ def test_bhavcopy_on_holiday():
     assert header in r
 
 """
+
+
+FO_SECBAN_TEXT = ("Securities in Ban For Trade Date 15-OCT-2025:\n"
+                  "1,RBLBANK\n"
+                  "2,SAIL\n")
+
+
+def test_fo_secban_raw_request_url():
+    n = NSEArchives()
+    resp = MagicMock(status_code=200, text=FO_SECBAN_TEXT)
+    with patch.object(n.s, "get", return_value=resp) as m_get:
+        assert n.fo_secban_raw(date(2025, 10, 15)) == FO_SECBAN_TEXT
+    url = m_get.call_args[0][0]
+    assert url.endswith("/archives/fo/sec_ban/fo_secban_15102025.csv")
+
+
+def test_fo_secban_list_parses_symbols():
+    n = NSEArchives()
+    with patch.object(n, "fo_secban_raw", return_value=FO_SECBAN_TEXT):
+        assert n.fo_secban_list(date(2025, 10, 15)) == ["RBLBANK", "SAIL"]
+
+
+def test_fo_secban_list_empty_ban():
+    n = NSEArchives()
+    text = "Securities in Ban For Trade Date 15-OCT-2025: NIL\n"
+    with patch.object(n, "fo_secban_raw", return_value=text):
+        assert n.fo_secban_list(date(2025, 10, 15)) == []
+
+
+def test_fo_secban_save(tmp_path):
+    n = NSEArchives()
+    with patch.object(n, "fo_secban_raw", return_value=FO_SECBAN_TEXT) as m_raw:
+        fname = n.fo_secban_save(date(2025, 10, 15), str(tmp_path))
+        assert fname.endswith("fo_secban_15102025.csv")
+        assert open(fname).read() == FO_SECBAN_TEXT
+        n.fo_secban_save(date(2025, 10, 15), str(tmp_path))
+        assert m_raw.call_count == 1  # second call skipped, file present
+
+
+@pytest.mark.live
+def test_fo_secban_live():
+    n = NSEArchives()
+    txt = n.fo_secban_raw(date(2025, 10, 15))
+    assert "ban" in txt.lower()
+    assert isinstance(n.fo_secban_list(date(2025, 10, 15)), list)
